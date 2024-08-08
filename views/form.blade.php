@@ -221,6 +221,6 @@
         <p>Copyright By@Example - 2020</p>
         <p>Terms of use | Privacy Enviromental Policy</p>
     </div>
-    <script src="./Scripts/burgerMenu.js"></script>
+    <script src="./scripts/burgerMenu.js"></script>
 </body>
 </html>

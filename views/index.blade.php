@@ -15,11 +15,15 @@
 <body>
     <p class="slogan">We Make Your Feel Comfortable</p>
     <nav class="navBar">
-         <svg class="navBar-burguer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
-        </svg>
+        <button class="mobileMenu" id="burgerIcon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="40" height="100" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
         <div class="navBar-logo">
-            <a class="logoLink" href="/index.php">
+            <a class="logoLink" href="./index.html">
                 <div>
                     <p>H</p>
                 </div>
@@ -30,10 +34,16 @@
             </a>
         </div>
         <div class="navBar-menu">
-            <p><a href="./about.php">About Us</a></p>
-            <p><a href="./rooms.php">Rooms</a></p>
-            <p><a href="./offers.php">Offers</a></p>
-            <p><a href="./contact.php">Contact</a></p>
+            <p><a href="./about.html">About Us</a></p>
+            <p><a href="./rooms.html">Rooms</a></p>
+            <p><a href="./offers.html">Offers</a></p>
+            <p><a href="./form.html">Contact</a></p>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <p><a href="./about.html">About Us</a></p>
+            <p><a href="./rooms.html">Rooms</a></p>
+            <p><a href="./offers.html">Offers</a></p>
+            <p><a href="./form.html">Contact</a></p>
         </div>
         <div class="navBar-icons">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,7 +75,6 @@
             <input type="date" name="departure" id="departure" class="dates-selector dates-selector--mod" type="date">
             <button type="submit" class="dates-button">CHECK AVAILABILITY</button>
         </form>
-        
     </section>
     <section class="aboutUs">
         <div class="aboutUs-container">
@@ -259,44 +268,12 @@
                 <div class="swiper-slide">
                     <div class="menu-table">
                         <div class="menu-table-item">
-                            <img src="./src/images/bacon.png"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Eggs & Bacon</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/tea.png"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Tea Or Coffee</p>
-                            <p >Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/chia.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Chia Oatmeal</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>
-                    <div class="menu-table menu-table--2">
-                        <div class="menu-table-item">
-                            <img src="./src/images/chia.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Chia Oatmeal</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
                             <img src="./src/images/fruit.jpg"/>
                         </div>
                         <div class="menu-table-item">
                             <p>Fruit Parfait</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                    </div>
-                    <div class="menu-table menu-table--3">
                         <div class="menu-table-item">
                             <img src="./src/images/marmalade.jpg"/>
                         </div>
@@ -311,7 +288,7 @@
                             <p>Cheese Plate</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                    </div>
+                    </div>  
                 </div>
                 <div class="swiper-slide">
                     <div class="menu-table">
@@ -336,44 +313,83 @@
                             <p>Cheese Plate</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
                         </div>
-                    </div>    
-                    <div class="menu-table menu-table--2">
-                        <div class="menu-table-item">
-                            <img src="./src/images/chia.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Chia Oatmeal</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/fruit.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Fruit Parfait</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
                     </div>
-                    <div class="menu-table menu-table--3">
-                        <div class="menu-table-item">
-                            <img src="./src/images/marmalade.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Marmalade Selection</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                        <div class="menu-table-item">
-                            <img src="./src/images/cheese.jpg"/>
-                        </div>
-                        <div class="menu-table-item">
-                            <p>Cheese Plate</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
-                        </div>
-                    </div>     
                 </div>
             </div>
             <div class="swiper-button-prev swiper-button-prev--menu"></div>
             <div class="swiper-button-next swiper-button-next--menu"></div>
         </div>
+        <ul class="menu-list">
+            <li>
+                <div class="menu-table-item">
+                    <img src="./src/images/fruit.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Fruit Parfait</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/marmalade.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Marmalade Selection</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/cheese.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Cheese Plate</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </li>
+            <li>
+                <div class="menu-table-item">
+                    <img src="./src/images/bacon.png"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Bacon & Eggs</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/chia.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Chia</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/tea.png"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Tea</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </li>
+            <li>
+                <div class="menu-table-item">
+                    <img src="./src/images/fruit.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Fruit Parfait</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/marmalade.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Marmalade Selection</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+                <div class="menu-table-item">
+                    <img src="./src/images/cheese.jpg"/>
+                </div>
+                <div class="menu-table-item">
+                    <p>Cheese Plate</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do eiusmod tempor.</p>
+                </div>
+            </li>
+        </ul>
         <div class="menu-food">
             <div class="swiper swiper--food">
                 <div class="swiper-wrapper">
@@ -527,5 +543,6 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts/slider.js"></script>
+    <script src="./Scripts/burgerMenu.js"></script>
 </body>
 </html>

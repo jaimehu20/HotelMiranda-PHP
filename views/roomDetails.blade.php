@@ -10,15 +10,17 @@
     <title>Room Details</title>
 </head>
 <body>
-    <p class="slogan">
-        We Make Your Feel Comfortable
-    </p>
+    <p class="slogan">We Make Your Feel Comfortable</p>
     <nav class="navBar">
-         <svg class="navBar-burguer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
-        </svg>
+        <button class="mobileMenu" id="burgerIcon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="40" height="100" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
         <div class="navBar-logo">
-            <a class="logoLink" href="/index.php">
+            <a class="logoLink" href="./index.php">
                 <div>
                     <p>H</p>
                 </div>
@@ -32,7 +34,13 @@
             <p><a href="./about.php">About Us</a></p>
             <p><a href="./rooms.php">Rooms</a></p>
             <p><a href="./offers.php">Offers</a></p>
-            <p><a href="./contact.php">Contact</a></p>
+            <p><a href="./form.php">Contact</a></p>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <p><a href="./about.php">About Us</a></p>
+            <p><a href="./rooms.php">Rooms</a></p>
+            <p><a href="./offers.php">Offers</a></p>
+            <p><a href="./form.php">Contact</a></p>
         </div>
         <div class="navBar-icons">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,8 +62,8 @@
         <p>THE ULTIMATE LUXURY</p>
         <p>Room Details</p>
         <div class="header-options">
-            <p>Home |</p>
-            <p>Room</p>
+            <p><a href="./index.php">Home</a> |</p>
+            <p><a href="./roomDetails.php">Room</a></p>
         </div>
     </header>
     <section class="roomDetails">
@@ -82,7 +90,7 @@
     </section>
     <section class="amenities">
         <h2>Amenities</h2>
-        <div>
+        <div class="amenities-content">
             <div class="amenities-list">
                 <div>
                     <img src="../src/icons/airconditioner.png"/>
@@ -162,8 +170,8 @@
     </section>
     <section class="relatedRooms">
         <h2>Related Rooms</h2>
-        <div class="roomList-container">
-            <img src="./src/images/room3.jpg"/>
+        <div class="relatedRoomList-container">
+            <img src="./src/images/room1.jpg"/>
             <div class="roomList-icons">
                 <img src="../src/icons/bedIcon.png"/>
                 <img src="../src/icons/wifIcon.png"/>
@@ -174,9 +182,9 @@
                 <img src="../src/icons/cocktail.png"/> 
             </div>
             <p>Minimal Duplex Room</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
+            <p class="relatedRooms-description">Lorem ipsum dolor sit amet, consectetur adipi sicing elit, sed do eiusmod tempor.</p>
             <div class="roomList-bookNow roomList-bookNow--rooms">
-                <p>$345/Night</p>
+                <p>$70/Night</p>
                 <p>Booking Now</p>
             </div>
         </div>
@@ -291,5 +299,6 @@
         <p>Copyright By@Example - 2020</p>
         <p>Terms of use | Privacy Enviromental Policy</p>
     </div>
+    <script src="./Scripts/burgerMenu.js"></script>
 </body>
 </html>

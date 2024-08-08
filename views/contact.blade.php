@@ -13,11 +13,15 @@
 <body>
     <p class="slogan">We Make Your Feel Comfortable</p>
     <nav class="navBar">
-         <svg class="navBar-burguer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                <path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path>
-        </svg>
+        <button class="mobileMenu" id="burgerIcon" onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))" aria-label="Main Menu">
+            <svg width="40" height="100" viewBox="0 0 100 100">
+              <path class="line line1" d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+              <path class="line line2" d="M 20,50 H 80" />
+              <path class="line line3" d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+            </svg>
+        </button>
         <div class="navBar-logo">
-            <a class="logoLink" href="/index.php">
+            <a class="logoLink" href="./index.php">
                 <div>
                     <p>H</p>
                 </div>
@@ -31,7 +35,13 @@
             <p><a href="./about.php">About Us</a></p>
             <p><a href="./rooms.php">Rooms</a></p>
             <p><a href="./offers.php">Offers</a></p>
-            <p><a href="./contact.php">Contact</a></p>
+            <p><a href="./form.php">Contact</a></p>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <p><a href="./about.php">About Us</a></p>
+            <p><a href="./rooms.php">Rooms</a></p>
+            <p><a href="./offers.php">Offers</a></p>
+            <p><a href="./form.php">Contact</a></p>
         </div>
         <div class="navBar-icons">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,34 +63,34 @@
         <p>THE ULTIMATE LUXURY</p>
         <p>New Details</p>
         <div class="header-options">
-            <p>Home |</p>
-            <p>Blog</p>
+            <p><a href="./index.php">Home</a> |</p>
+            <p><a href="./form.php">Blog</a></p>
         </div>
     </header>
     <section class="formData">
-        <h1>01</h1>
-        <h1>02</h1>
-        <h1>03</h1>
         <div class="formData-info">
             <div>
-                <img src="../src/icons/message.png"/>
+                <img src="./src/icons/message.png"/>
                 <div>
                     <p>Hotel Adress</p>
                     <p>19/A, Cirikon City hall Tower New York, NYC</p>
+                    <h1>01</h1>
                 </div>
             </div>
             <div>
-                <img src="../src/icons/phone.png"/>
+                <img src="./src/icons/phone.png"/>
                 <div>
                     <p>Phone Number</p>
                     <p>+987 876 765 76 577</p>
+                    <h1>02</h1>
                 </div>
             </div>
             <div>
-                <img src="../src/icons/email.png"/> 
+                <img src="./src/icons/email.png"/> 
                 <div>
                     <p>Email</p>
                     <p>info@webmail.com </p>
+                    <h1>03</h1>
                 </div>
             </div> 
         </div>
@@ -211,5 +221,6 @@
         <p>Copyright By@Example - 2020</p>
         <p>Terms of use | Privacy Enviromental Policy</p>
     </div>
+    <script src="./Scripts/burgerMenu.js"></script>
 </body>
 </html>

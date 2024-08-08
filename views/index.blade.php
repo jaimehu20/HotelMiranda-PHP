@@ -23,7 +23,7 @@
             </svg>
         </button>
         <div class="navBar-logo">
-            <a class="logoLink" href="./index.html">
+            <a class="logoLink" href="./index.php">
                 <div>
                     <p>H</p>
                 </div>
@@ -34,16 +34,16 @@
             </a>
         </div>
         <div class="navBar-menu">
-            <p><a href="./about.html">About Us</a></p>
-            <p><a href="./rooms.html">Rooms</a></p>
-            <p><a href="./offers.html">Offers</a></p>
-            <p><a href="./form.html">Contact</a></p>
+            <p><a href="./about.php">About Us</a></p>
+            <p><a href="./rooms.php">Rooms</a></p>
+            <p><a href="./offers.php">Offers</a></p>
+            <p><a href="./form.php">Contact</a></p>
         </div>
         <div class="mobile-menu" id="mobileMenu">
-            <p><a href="./about.html">About Us</a></p>
-            <p><a href="./rooms.html">Rooms</a></p>
-            <p><a href="./offers.html">Offers</a></p>
-            <p><a href="./form.html">Contact</a></p>
+            <p><a href="./about.php">About Us</a></p>
+            <p><a href="./rooms.php">Rooms</a></p>
+            <p><a href="./offers.php">Offers</a></p>
+            <p><a href="./form.php">Contact</a></p>
         </div>
         <div class="navBar-icons">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
